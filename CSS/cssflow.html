@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSSFlow</title>
+	<style type="text/css">
+		body{
+			font-family: "MicrosoftYaHei","Microsoft YaHei", "微软雅黑", "Helvetica", "Arial",sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.left{
+			float: left;
+		}
+		.right{
+			float: right;
+		}
+		.w{
+			width: 390px;
+			height: 200px;
+		}
+		.wh{
+			width: 200px;
+			height: 200px;
+		}
+		.h{
+			width: 200px;
+			height: 405px;
+		}
+		
+		.pics{
+			width: 1005px;
+			margin: 0 auto;
+		}
+		.pics div{
+			overflow: hidden;
+			position: relative;
+		}
+		.pic-wrap{
+			float: left;
+			margin-right: 5px;
+			margin-bottom: 5px;
+			cursor: pointer;
+		}
+		.pics .left{
+			width: 600px;
+		}
+		.pics .right{
+			width: 200px;
+		}
+		.pics img{
+			transition: all .6s ease-in-out;			
+		}
+		h3{
+			position: absolute;
+			left: 20px;
+			bottom: 10px;
+			font-size: 24px;
+			color: #FFF;
+			transition: opacity 0.5s;
+		}
+		.holder{
+			position: absolute!important;
+			width: 100%;
+			bottom: -100%;
+			padding: 15px 0 15px 15px;
+			transition: bottom .6s 
+		}
+		.desc-title a{
+			color: #FFF;
+			text-decoration: none;
+		}
+		.desc-title em{
+			font-style: normal;
+			font-size: 24px;
+			display: block;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.desc-title strong{
+			font-size: 14px;
+		}
+		.pic-wrap:hover img{
+			transform: scale(1.5);
+		}
+		.pic-wrap:hover h3{
+			opacity: 0;
+		}
+		.pic-wrap:hover .holder{
+			bottom: 0;
+		}
+		.box{
+			width: 100%;
+			height: 100%;
+		}
+		.color-one{			
+			background: #F29448;
+		}
+		.color-two{
+			background: #FF83DB;
+		}
+		.color-three{
+			background: #98F286;
+		}
+		.color-four{
+			background: #4AAEF2;
+		}
+		.color-five{
+			background: #1BF29A;
+		}
+		.color-six{
+			background: #F264A2;
+		}
+		.color-seven{
+			background: #A6FF67;
+		}
+	</style>
+</head>
+<body>
+	<div class="pics">
+		<div class="left">
+			<div class="pic-wrap w">
+				<div class="box color-one"></div>
+				<div class="holder">
+					<div class="desc-title">
+						<a href="#" alt="#1"><em>城市</em></a>
+						<a href="#" alt="#1"><strong>城市副标题1</strong></a>
+						<a href="#" alt="#2"><strong>城市副标题2</strong></a>
+					</div>
+				</div>
+				<h3 class="title">城市</h3>
+			</div>
+			<div class="pic-wrap wh">
+				<div class="box color-two"></div>
+				<div class="holder">
+					<div class="desc-title">
+						<a href="#" alt="#1"><em>城市</em></a>
+						<a href="#" alt="#1"><strong>城市副标题1</strong></a>
+						<a href="#" alt="#2"><strong>城市副标题2</strong></a>
+					</div>
+				</div>
+				<h3 class="title">城市</h3>
+			</div>
+			<div class="pic-wrap wh">
+				<div class="box color-three"></div>
+				<div class="holder">
+					<div class="desc-title">
+						<a href="#" alt="#1"><em>城市</em></a>
+						<a href="#" alt="#1"><strong>城市副标题1</strong></a>
+						<a href="#" alt="#2"><strong>城市副标题2</strong></a>
+					</div>
+				</div>
+				<h3 class="title">城市</h3>
+			</div>
+			<div class="pic-wrap w">
+				<div class="box color-four"></div>
+				<div class="holder">
+					<div class="desc-title">
+						<a href="#" alt="#1"><em>城市</em></a>
+						<a href="#" alt="#1"><strong>城市副标题1</strong></a>
+						<a href="#" alt="#2"><strong>城市副标题2</strong></a>
+					</div>
+				</div>
+				<h3 class="title">城市</h3>
+			</div>
+		</div>
+		<div style="float: left;">
+			<div class="pic-wrap h">
+				<div class="box color-five"></div>
+				<div class="holder">
+					<div class="desc-title">
+						<a href="#" alt="#1"><em>城市</em></a>
+						<a href="#" alt="#1"><strong>城市副标题1</strong></a>
+						<a href="#" alt="#2"><strong>城市副标题2</strong></a>
+					</div>
+				</div>
+				<h3 class="title">城市</h3>
+			</div>
+		</div>
+		<div class="right">
+			<div class="pic-wrap w">
+				<div class="box color-six"></div>
+				<div class="holder">
+					<div class="desc-title">
+						<a href="#" alt="#1"><em>城市</em></a>
+						<a href="#" alt="#1"><strong>城市副标题1</strong></a>
+						<a href="#" alt="#2"><strong>城市副标题2</strong></a>
+					</div>
+				</div>
+				<h3 class="title">城市</h3>
+			</div>
+			<div class="pic-wrap w">
+				<div class="box color-seven"></div>
+				<div class="holder">
+					<div class="desc-title">
+						<a href="#" alt="#1"><em>城市</em></a>
+						<a href="#" alt="#1"><strong>城市副标题1</strong></a>
+						<a href="#" alt="#2"><strong>城市副标题2</strong></a>
+					</div>
+				</div>
+				<h3 class="title">城市</h3>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
